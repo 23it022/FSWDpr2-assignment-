@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="pr3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Planner</h1>
+        <form id="addSessionForm">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic" required>
+            
+            <label for="sessionTime">Session Time:</label>
+            <input type="datetime-local" id="sessionTime" name="sessionTime" required>
+            
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+            
+            <button type="submit">Add Session</button>
+        </form>
+        
+        <h2>Today's Sessions</h2>
+        <ul id="sessionsList"></ul>
+    </div>
+    
+    <script src="pr3.js"></script>
+</body>
+</html>
